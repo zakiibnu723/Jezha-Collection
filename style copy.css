@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: #393E46;
+}
+
+body {
+    font-family: "Montserrat";
+    background-color: #F7F7F7; 
+     
+}
+
+navbar {
+    /* display: flex;
+    justify-content: space-around; */
+    
+    .logo {
+        /* position: absolute; */
+    }
+
+    .menu-toggle {
+        display: none;
+        position: sticky;
+        top: 20px;
+        margin-left: 87%;
+        margin-top: -45px;
+        z-index: 1000;
+        
+        
+        & span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin-bottom: 5px;
+            background-color: #2e3339;
+            transform-origin: 0 0;
+            transition: all 0.5s ease-in-out;    
+        }
+    
+        & input {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            top: -7px;
+            left: -5px;
+            opacity: 0%;
+            z-index: 100;
+        }
+    
+        & input:checked ~ span {
+            /* background-color: #F7F7F7; */    
+            &:nth-of-type(1) {
+                transform: translateX(-40vw) rotate(45deg) translate(1px, -1.2px);;
+            }           
+    
+            &:nth-of-type(3) {
+                transform: translateX(-40vw) rotate(-45deg) translate(-2px, 0.5px);        
+            }
+    
+            &:nth-of-type(2) {
+                transform: translateX(-40vw) scale(0);
+                opacity: 0;
+            }
+        }   
+    
+        & input:checked {
+            transform: translateX(-40vw);
+        }
+    }   
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .nav {
+        width: 60%;
+        position: fixed;
+        transform: translateX(0vw);
+        height: 100vh;
+        top: 0;
+        right: 0px;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(237, 237, 237, 0.733);
+        backdrop-filter: blur(1px);
+        box-shadow: rgba(0, 0, 0, 0.40) -3px 0px 8px;
+        z-index: 100;
+        transition: all 0.5s ease-in-out;
+
+        & a {
+            /* color: #F7F7F7; */
+            font-size: 12px;
+        }      
+    }
+    
+    .nav a:hover::after {
+        width: 0%;
+    }
+    
+    .nav.slide {
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        display: inline-block;
+        z-index: 1000;
+    }
+}
