@@ -88,10 +88,10 @@ body {
         }
 
         & h1 {
-            width: 55vw;
-            font-size: 14px;
+            width: 60vw;
+            font-size: 18px;
             font-weight: 800;
-            margin-bottom: 20px;
+            margin-bottom: 26px;
         }
     
         .username-form {
@@ -104,10 +104,10 @@ body {
                 display: block;
                 outline: none;
                 text-align: center;
-                padding: 6px 26px 6px 10px;
+                padding: 10px 26px 10px 14px;
                 background-color: #f6f6f6;
-                border-radius: 16px;
-                font-size: 12px;
+                border-radius: 20px;
+                font-size: 16px;
                 transition: all 0.5s ease-in-out;
                 /* border-color: rgb(188, 188, 188); */
 
@@ -138,7 +138,7 @@ body {
             gap: 2px;
 
             & p {
-                font-size: 8px;
+                font-size: 9px;
                 /* font-family: Arial, Helvetica, sans-serif; */
                 text-align: left;
                 color: #5a5a5a;
