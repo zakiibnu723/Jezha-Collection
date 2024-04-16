@@ -84,30 +84,30 @@ body {
         & img {
             width: 25vw;
             /* margin-bottom: 55px; */
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
 
         & h1 {
             width: 60vw;
             font-size: 18px;
             font-weight: 800;
-            margin-bottom: 26px;
+            margin-bottom: 28px;
         }
     
         .username-form {
             position: relative;
 
             & input {
-                width: 70vw;
+                width: 60vw;
                 box-shadow: none;
                 border-width: 0 0 0 0;
                 display: block;
                 outline: none;
                 text-align: center;
-                padding: 10px 26px 10px 14px;
+                padding: 12px 42px 12px 18px;
                 background-color: #f6f6f6;
-                border-radius: 20px;
-                font-size: 16px;
+                border-radius: 22px;
+                font-size: 14px;
                 transition: all 0.5s ease-in-out;
                 /* border-color: rgb(188, 188, 188); */
 
@@ -119,8 +119,8 @@ body {
 
             & button {
                 position: absolute;
-                top: 0;
-                right: 0;
+                top: 7px;
+                right: 10px;
                 box-shadow: none;
                 transform: scale(0.6) translate(6px, 0);
                 background-color: #c6c6c600;
@@ -133,12 +133,12 @@ body {
     
         .note {
             display: flex;
-            width: 78vw;
-            margin-top: 12px;
+            width: 72vw;
+            margin-top: 8px;
             gap: 2px;
 
             & p {
-                font-size: 9px;
+                font-size: 8px;
                 /* font-family: Arial, Helvetica, sans-serif; */
                 text-align: left;
                 color: #5a5a5a;
