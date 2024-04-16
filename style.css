@@ -110,6 +110,7 @@ body {
                 font-size: 14px;
                 transition: all 0.5s ease-in-out;
                 font-family: "Montserrat";
+                text-transform: capitalize;
                 /* border-color: rgb(188, 188, 188); */
 
             }
