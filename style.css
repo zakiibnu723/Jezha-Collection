@@ -318,7 +318,7 @@ body {
             background-color: rgba(216, 216, 216, 0.342);
             border-radius: 8PX;
             transition: all 0.5s ease-in-out;
-            margin-top: -154PX;
+/*             margin-top: -154PX; */
             
             
             & ol {
